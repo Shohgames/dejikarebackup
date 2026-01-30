@@ -1,0 +1,41 @@
+１：rootユーザーへの切り替え
+su -
+cisco
+
+Apache httpd 2.4の導入の流れ
+yum info httpd
+yum -y install httpd
+httpd -version
+
+２：IPv４アドレスを手動で設定
+nmcli connection modify enp0s3 ipv4.method manual ipv4.addresses {192.168.0.22/28}
+
+３：デフォルトゲートウェイ追加
+nmcli connection modify enp0s3 ipv4.gateway 192.168.0.31
+
+４：コネクションを再起動
+nmcli connection down enp0s3
+nmcli connection up enp0s3
+
+５：インターフェイスとデフォルトゲートウェイのIPアドレス確認
+ip address show
+route -n
+
+６：Webサイト構築
+vi /var/www/html/index.html
+i
+test message
+
+[Esc]キー押下
+
+:wq
+
+７：ファイアーウォール設定
+firewall-cmd --add-service=http --permanennt
+
+８：再起動
+firewall-cmd --reload
+
+９：設定確認
+firewall-cmd --list-all
+

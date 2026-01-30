@@ -1,0 +1,42 @@
+スイッチ構築
+
+1:構築準備
+no
+enable
+terminal length 0
+show running-config
+configure terminal
+
+２：ホスト名
+hostname SW‗2
+
+３：基本設定
+enable secret cisco
+
+４：基本設定
+no ip domain-lookup
+service password-encryption
+line con 0
+logging synchronous
+
+５：基本設定
+line vty 0 4
+password cisco
+transport input all
+login
+exit
+
+６：ポート設定
+interface vlan1
+ip address 192.168.0.21 255.255.255.240
+no shutdown
+exit
+
+７：ルーティング設定
+ip default-gateway 192.168.0.31 255.255.255.240
+
+８：設定保存
+copy runningu-config startup-config
+
+show running-config
+

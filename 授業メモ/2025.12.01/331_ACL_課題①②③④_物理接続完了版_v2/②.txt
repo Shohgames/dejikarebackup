@@ -1,0 +1,7 @@
+RT1#show access-lists Two
+Extended IP access list Two
+    deny icmp 192.168.1.0 0.0.0.255 host 100.0.0.254 (4 match(es))
+    permit tcp 192.168.1.0 0.0.0.255 host 100.0.0.254 eq www (5 match(es))
+    permit tcp 192.168.1.0 0.0.0.255 host 100.0.0.254 eq 20
+    permit tcp 192.168.1.0 0.0.0.255 host 100.0.0.254 eq ftp (10 match(es))
+    permit tcp 192.168.1.0 0.0.0.255 host 192.168.1.254 eq telnet (62 match(es))

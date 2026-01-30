@@ -1,0 +1,87 @@
+
+
+
+
+	enable
+	conf t
+	int fa0/0
+	ip address 192.168.34.4 255.255.255.0
+	exit
+	int fa 0/1
+	ip address 10.0.0.4 255.255.255.0
+	exit
+	int lo 0
+	ip address 4.4.4.4 255.255.255.0
+	exit
+
+
+
+enable
+conf t
+hostname RT_D
+enable secret cisco
+int fa0/0
+no shutdown
+exit
+int fa0/1
+no shutdown
+exit
+int lo0
+no shutdown
+exit
+line vty 0 4
+password ccna
+exit
+no ip domain-lookup
+exit
+
+
+
+
+#a-d
+enable
+conf t
+router ospf 1
+log- detail
+network 192.168.12.0 0.0.0.255 area 0
+network 10.0.0.0 0.0.0.255 area 0
+
+
+#c-d
+conf t
+router ospf 1
+log- detail
+network 192.168.34.0 0.0.0.255 area 0
+network 10.0.0.0 0.0.0.255 area 0
+
+
+
+
+
+network 1.1.1.0 0.0.0.255 area 0
+network 2.2.2.0 0.0.0.255 area 0
+network 3.3.3.0 0.0.0.255 area 0
+network 4.4.4.0 0.0.0.255 area 0
+
+
+router-id 1.1.1.1
+
+
+int fa 0/0
+ip ospf authentication
+ip ospf authentication-key ICDN1
+exit
+int fa0/1
+ip ospf authentication message-digest
+ip ospf message-digest-key 10 md5 ICDN2
+exit
+
+
+a100 b 25 c50 d0
+
+interface fa0/1
+ip ospf priority 0
+ 
+show ip ospf interface fa0/1
+
+

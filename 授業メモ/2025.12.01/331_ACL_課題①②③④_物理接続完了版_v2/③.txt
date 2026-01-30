@@ -1,0 +1,6 @@
+RT1#show access-lists Three
+Extended IP access list Three
+    deny icmp 192.168.1.0 0.0.0.255 host 100.0.0.254
+    permit tcp 192.168.1.0 0.0.0.255 host 100.0.0.254 eq www
+    permit tcp 192.168.1.0 0.0.0.255 host 100.0.0.254 eq 20
+    permit tcp 192.168.1.0 0.0.0.255 host 100.0.0.254 eq ftp
