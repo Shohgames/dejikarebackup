@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>WEBSV テストページ</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #4a90e2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            border-left: 6px solid #4a90e2;
+            padding-left: 10px;
+        }
+        .info-box {
+            background: #e8f2ff;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>WEBSV テストページ</h1>
+    <p>Web サーバーの動作確認用ページ</p>
+</header>
+
+<main>
+    <h2>ページ表示テスト</h2>
+    <div class="info-box">
+        HTML・CSS の読み込みが正常であれば、このボックスが青色で表示されます。
+    </div>
+
+    <h2>現在時刻（ブラウザ側）</h2>
+    <p id="time">読み込み中...</p>
+
+    <script>
+        // HTMLだけでと言われたので、最低限のJSは埋め込みで
+        const t = new Date();
+        document.getElementById("time").textContent = t.toLocaleString();
+    </script>
+
+    <h2>リンクテスト</h2>
+    <p><a href="https://www.example.com" target="_blank">Example.com を開く</a></p>
+
+    <h2>画像表示テスト</h2>
+    <p>画像が表示されれば静的ファイル配信OK</p>
+    <img src="test.png" alt="テスト画像" width="150">
+</main>
+
+<footer>
+    © WEBSV Test Page
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Timeline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            padding: 30px;
+            max-width: 100%;
+            overflow-x: auto;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 24px;
+        }
+        
+        .timeline-chart {
+            position: relative;
+            min-width: 1400px;
+        }
+        
+        .year-headers {
+            display: flex;
+            margin-bottom: 10px;
+            padding-left: 250px;
+        }
+        
+        .year {
+            flex: 1;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+            background: #333;
+            color: white;
+            border-right: 1px solid white;
+        }
+        
+        .month-headers {
+            display: flex;
+            margin-bottom: 5px;
+            padding-left: 250px;
+            background: #666;
+        }
+        
+        .month {
+            width: calc(100% / 114);
+            text-align: center;
+            font-size: 9px;
+            padding: 5px 2px;
+            color: white;
+            border-right: 1px solid #888;
+        }
+        
+        .projects {
+            position: relative;
+        }
+        
+        .project-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3px;
+            height: 32px;
+            position: relative;
+        }
+        
+        .project-label {
+            width: 250px;
+            padding-right: 10px;
+            font-size: 11px;
+            font-weight: 500;
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .project-timeline {
+            flex: 1;
+            position: relative;
+            height: 100%;
+        }
+        
+        .project-bar {
+            position: absolute;
+            height: 28px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            font-size: 10px;
+            color: white;
+            font-weight: 500;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        .grid-lines {
+            position: absolute;
+            top: 0;
+            left: 250px;
+            right: 0;
+            height: 100%;
+            display: flex;
+        }
+        
+        .grid-line {
+            width: calc(100% / 114);
+            border-right: 1px solid #e0e0e0;
+            height: 100%;
+        }
+        
+        .grid-line.year-line {
+            border-right: 2px solid #bbb;
+        }
+        
+        /* Color scheme for different industries */
+        .edu { background: #4CAF50; }
+        .trans { background: #FF9800; }
+        .ops { background: #2196F3; }
+        .marketing { background: #9C27B0; }
+        .school { background: #00BCD4; }
+        .toc { background: #E91E63; }
+        .corp { background: #795548; }
+        .telecom { background: #3F51B5; }
+        .it { background: #607D8B; }
+        .travel { background: #FF5722; }
+        .sports { background: #FFC107; }
+        .finance { background: #009688; }
+        .marketplace { background: #673AB7; }
+        .oa { background: #8BC34A; }
+        
+        .legend {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+        }
+        
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Timeline: 2016 - 2025</h1>
+        
+        <div class="timeline-chart">
+            <div class="year-headers" id="yearHeaders"></div>
+            <div class="month-headers" id="monthHeaders"></div>
+            
+            <div class="projects" id="projects">
+                <div class="grid-lines" id="gridLines"></div>
+            </div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item"><div class="legend-color edu"></div> Education</div>
+            <div class="legend-item"><div class="legend-color trans"></div> Translation</div>
+            <div class="legend-item"><div class="legend-color ops"></div> Operations</div>
+            <div class="legend-item"><div class="legend-color marketing"></div> Marketing</div>
+            <div class="legend-item"><div class="legend-color school"></div> School/Tech Lead</div>
+            <div class="legend-item"><div class="legend-color toc"></div> toC Services</div>
+            <div class="legend-item"><div class="legend-color corp"></div> Corporate</div>
+            <div class="legend-item"><div class="legend-color telecom"></div> Telecom</div>
+            <div class="legend-item"><div class="legend-color it"></div> IT</div>
+            <div class="legend-item"><div class="legend-color travel"></div> Travel</div>
+            <div class="legend-item"><div class="legend-color sports"></div> Sports/Entertainment</div>
+            <div class="legend-item"><div class="legend-color finance"></div> Finance</div>
+            <div class="legend-item"><div class="legend-color marketplace"></div> Marketplace</div>
+            <div class="legend-item"><div class="legend-color oa"></div> OA/Infrastructure</div>
+        </div>
+    </div>
+
+    <script>
+        const projects = [
+            { name: "Scratch/HTML Education (JP/TJ)", start: "2016-05", end: "2017-01", category: "edu" },
+            { name: "Translation & Localization (TJ)", start: "2017-03", end: "2020-02", category: "trans" },
+            { name: "Minecraft Server (TJ)", start: "2019-01", end: "2020-02", category: "ops" },
+            { name: "Intern/Junior dev (TJ/JP/RU)", start: "2020-09", end: "2021-08", category: "marketing"}
+            { name: "Digital Marketing UI/Systems (TJ/US/SE)", start: "2021-09", end: "2023-09", category: "marketing" },
+            { name: "International Digital Strategy (SE)", start: "2022-10", end: "2023-06", category: "school" },
+            { name: "AI Training & Tools (SE)", start: "2023-01", end: "2023-02", category: "toc" },
+            { name: "B2B Automation Consulting (SE)", start: "2023-11", end: "2024-04", category: "corp" },
+            { name: "Linux Server Ops (SE)", start: "2024-06", end: "2025-08", category: "telecom" },
+            { name: "Python Utility Library (SE/JP)", start: "2024-09", end: "2025-08", category: "it" },
+            { name: "WordPress CMS & PHP Migration (SE)", start: "2024-11", end: "2025-01", category: "travel" },
+            { name: "Web Scraper Tool (SE)", start: "2025-01", end: "2025-03", category: "it" },
+            { name: "Flask Library ERP (SE)", start: "2025-02", end: "2025-05", category: "edu" },
+            { name: "Sports SaaS Platform (CH/DE/SE)", start: "2025-02", end: "2025-07", category: "sports" },
+            { name: "WordPress Timeline Feature (US)", start: "2025-03", end: "2025-06", category: "it" },
+            { name: "Anti-Shell Company System (SE)", start: "2025-03", end: "2025-07", category: "finance" },
+            { name: "University Marketplace (SE)", start: "2025-04", end: "2025-05", category: "marketplace" },
+            { name: "Network I/O Logging (SE)", start: "2025-06", end: "2025-08", category: "telecom" },
+            { name: "Python HTTP Server (JP)", start: "2025-07", end: "2025-08", category: "telecom" },
+            { name: "Infrastructure Delivery (JP)", start: "2025-02", end: "2025-08", category: "oa" }
+        ];
+
+        const startYear = 2016;
+        const startMonth = 5;
+        const endYear = 2025;
+        const endMonth = 8;
+
+        function generateHeaders() {
+            const yearHeadersDiv = document.getElementById('yearHeaders');
+            const monthHeadersDiv = document.getElementById('monthHeaders');
+            const gridLinesDiv = document.getElementById('gridLines');
+            
+            let monthCount = 0;
+            
+            for (let year = startYear; year <= endYear; year++) {
+                const start = (year === startYear) ? startMonth : 1;
+                const end = (year === endYear) ? endMonth : 12;
+                const months = end - start + 1;
+                
+                const yearDiv = document.createElement('div');
+                yearDiv.className = 'year';
+                yearDiv.textContent = year;
+                yearDiv.style.flex = months;
+                yearHeadersDiv.appendChild(yearDiv);
+                
+                for (let month = start; month <= end; month++) {
+                    const monthDiv = document.createElement('div');
+                    monthDiv.className = 'month';
+                    const monthNames = ['J','F','M','A','M','J','J','A','S','O','N','D'];
+                    monthDiv.textContent = monthNames[month - 1];
+                    monthHeadersDiv.appendChild(monthDiv);
+                    
+                    const gridLine = document.createElement('div');
+                    gridLine.className = month === 1 ? 'grid-line year-line' : 'grid-line';
+                    gridLinesDiv.appendChild(gridLine);
+                    
+                    monthCount++;
+                }
+            }
+        }
+
+        function dateToMonthIndex(dateStr) {
+            const [year, month] = dateStr.split('-').map(Number);
+            const yearOffset = year - startYear;
+            const monthOffset = month - startMonth;
+            
+            let index = 0;
+            for (let y = startYear; y < year; y++) {
+                const start = (y === startYear) ? startMonth : 1;
+                const end = (y === endYear) ? endMonth : 12;
+                index += end - start + 1;
+            }
+            
+            if (year === startYear) {
+                index += month - startMonth;
+            } else {
+                index += month - 1;
+            }
+            
+            return index;
+        }
+
+        function renderProjects() {
+            const projectsDiv = document.getElementById('projects');
+            const totalMonths = dateToMonthIndex(endYear + '-' + endMonth) + 1;
+            
+            projects.forEach(project => {
+                const row = document.createElement('div');
+                row.className = 'project-row';
+                
+                const label = document.createElement('div');
+                label.className = 'project-label';
+                label.textContent = project.name;
+                
+                const timeline = document.createElement('div');
+                timeline.className = 'project-timeline';
+                
+                const bar = document.createElement('div');
+                bar.className = `project-bar ${project.category}`;
+                
+                const startIndex = dateToMonthIndex(project.start);
+                const endIndex = dateToMonthIndex(project.end);
+                const duration = endIndex - startIndex + 1;
+                
+                bar.style.left = `${(startIndex / totalMonths) * 100}%`;
+                bar.style.width = `${(duration / totalMonths) * 100}%`;
+                bar.textContent = project.start + ' — ' + project.end;
+                
+                timeline.appendChild(bar);
+                row.appendChild(label);
+                row.appendChild(timeline);
+                projectsDiv.appendChild(row);
+            });
+        }
+
+        generateHeaders();
+        renderProjects();
+    </script>
+</body>
+</html>

@@ -1,0 +1,584 @@
+[2026-01-28 09:56:40.354] 
+[2026-01-28 09:56:40.354] System Bootstrap, Version 15.4(1r)T, RELEASE SOFTWARE (fc1)
+[2026-01-28 09:56:40.418] Technical Support: http://www.cisco.com/techsupport
+[2026-01-28 09:56:40.466] Copyright (c) 2013 by cisco Systems, Inc.
+[2026-01-28 09:56:40.562] 
+[2026-01-28 09:56:40.562] Total memory size = 1024 MB
+[2026-01-28 09:56:40.978] C891FJ-K9          platform with 1048576 Kbytes of main memory
+[2026-01-28 09:56:41.042] Main memory is configured to 32 bit mode 
+[2026-01-28 09:56:41.090] 
+[2026-01-28 09:56:41.090] Readonly ROMMON initialized
+[2026-01-28 09:56:43.537] 
+[2026-01-28 09:57:28.755] 
+[2026-01-28 09:57:28.755] IOS Image Load Test 
+[2026-01-28 09:57:28.771] ___________________ 
+[2026-01-28 09:57:45.604] Digitally Signed Production Software 
+[2026-01-28 09:57:47.956] Self decompressing the image : ############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################## [OK]
+[2026-01-28 09:57:54.564] *** No sreloc section
+[2026-01-28 09:57:58.252] Smart Init is enabled
+[2026-01-28 09:57:58.284] smart init is sizing iomem
+[2026-01-28 09:57:58.318]                  TYPE      MEMORY_REQ
+[2026-01-28 09:57:58.350]     Onboard devices &
+[2026-01-28 09:57:58.381]          buffer pools      0x03AECEC0 
+[2026-01-28 09:57:58.414] -----------------------------------------------
+[2026-01-28 09:57:58.477]                TOTAL:      0x03AECEC0
+[2026-01-28 09:57:58.511] 
+[2026-01-28 09:57:58.511] Rounded IOMEM up to: 58Mb.
+[2026-01-28 09:57:58.542] Using 5 percent iomem. [58Mb/1024Mb]
+[2026-01-28 09:58:00.830] 
+[2026-01-28 09:58:00.830]               Restricted Rights Legend
+[2026-01-28 09:58:00.872] 
+[2026-01-28 09:58:00.872] Use, duplication, or disclosure by the Government is
+[2026-01-28 09:58:00.936] subject to restrictions as set forth in subparagraph
+[2026-01-28 09:58:00.986] (c) of the Commercial Computer Software - Restricted
+[2026-01-28 09:58:01.053] Rights clause at FAR sec. 52.227-19 and subparagraph
+[2026-01-28 09:58:01.116] (c) (1) (ii) of the Rights in Technical Data and Computer
+[2026-01-28 09:58:01.174] Software clause at DFARS sec. 252.227-7013.
+[2026-01-28 09:58:01.237] 
+[2026-01-28 09:58:01.237]            cisco Systems, Inc.
+[2026-01-28 09:58:01.268]            170 West Tasman Drive
+[2026-01-28 09:58:01.315]            San Jose, California 95134-1706
+[2026-01-28 09:58:01.365] 
+[2026-01-28 09:58:01.365] 
+[2026-01-28 09:58:01.365] 
+[2026-01-28 09:58:01.365] Cisco IOS Software, C800 Software (C800-UNIVERSALK9-M), Version 15.4(1)T1, RELEASE SOFTWARE (fc2)
+[2026-01-28 09:58:01.475] Technical Support: http://www.cisco.com/techsupport
+[2026-01-28 09:58:01.537] Copyright (c) 1986-2014 by Cisco Systems, Inc.
+[2026-01-28 09:58:01.588] Compiled Wed 12-Feb-14 06:45 by prod_rel_team
+[2026-01-28 09:58:01.659] 
+[2026-01-28 09:58:18.174] 
+[2026-01-28 09:58:18.174] This product contains cryptographic features and is subject to United
+[2026-01-28 09:58:18.255] States and local country laws governing import, export, transfer and
+[2026-01-28 09:58:18.334] use. Delivery of Cisco cryptographic products does not imply
+[2026-01-28 09:58:18.399] third-party authority to import, export, distribute or use encryption.
+[2026-01-28 09:58:18.494] Importers, exporters, distributors and users are responsible for
+[2026-01-28 09:58:18.559] compliance with U.S. and local country laws. By using this product you
+[2026-01-28 09:58:18.640] agree to comply with applicable laws and regulations. If you are unable
+[2026-01-28 09:58:18.734] to comply with U.S. and local laws, return this product immediately.
+[2026-01-28 09:58:18.815] 
+[2026-01-28 09:58:18.815] A summary of U.S. laws governing Cisco cryptographic products may be found at:
+[2026-01-28 09:58:18.910] http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+[2026-01-28 09:58:18.974] 
+[2026-01-28 09:58:18.974] If you require further assistance please contact us by sending email to
+[2026-01-28 09:58:19.055] export@cisco.com.
+[2026-01-28 09:58:19.070] 
+[2026-01-28 09:58:21.167] Installed image archive
+[2026-01-28 09:58:29.663] Cisco C891FJ-K9 (revision 1.0) with 988236K/60339K bytes of memory.
+[2026-01-28 09:58:29.743] Processor board ID FGL183520E4
+[2026-01-28 09:58:29.775] 1 FastEthernet interface
+[2026-01-28 09:58:29.807] 9 Gigabit Ethernet interfaces
+[2026-01-28 09:58:29.838] 1 Serial interface
+[2026-01-28 09:58:29.855] 1 ISDN Basic Rate interface
+[2026-01-28 09:58:29.886] 1 terminal line
+[2026-01-28 09:58:29.919] 1 Virtual Private Network (VPN) Module
+[2026-01-28 09:58:29.967] DRAM configuration is 32 bits wide
+[2026-01-28 09:58:29.998] 255K bytes of non-volatile configuration memory.
+[2026-01-28 09:58:30.063] 250880K bytes of ATA System CompactFlash (Read/Write)
+[2026-01-28 09:59:14.366] 
+[2026-01-28 09:59:14.366] 
+[2026-01-28 09:59:14.366]          --- System Configuration Dialog ---
+[2026-01-28 09:59:14.413] 
+[2026-01-28 09:59:14.413] Would you like to enter the initial configuration dialog? [yes/no]: no
+[2026-01-28 09:59:35.615] 
+[2026-01-28 09:59:35.616] 
+[2026-01-28 09:59:35.616] Press RETURN to get started!
+[2026-01-28 09:59:35.648] 
+[2026-01-28 09:59:35.648] 
+[2026-01-28 09:59:35.649] *Jan  2 00:00:00.779: %IOS_LICENSE_IMAGE_APPLICATION-6-LICENSE_LEVEL: Module name = c800 Next reboot level = advipservices and License = advipservices
+[2026-01-28 09:59:35.824] *Jan 28 00:35:00.723: %VPN_HW-6-INFO_LOC: Crypto engine: onboard 0  State changed to: Initialized 
+[2026-01-28 09:59:35.936] *Jan 28 00:35:00.723: %VPN_HW-6-INFO_LOC: Crypto engine: onboard 0  State changed to: Enabled 
+[2026-01-28 09:59:36.049] *Jan 28 00:35:10.511: %CTS-6-ENV_DATA_START_STATE: Environment Data Download in start state
+[2026-01-28 09:59:36.161] *Jan 28 00:35:13.087: Installing default VOIPHA services
+[2026-01-28 09:59:36.225] 
+[2026-01-28 09:59:36.225] *Jan 28 00:35:16.563: %LINEPROTO-5-UPDOWN: Line protocol on Interface VoIP-Null0, changed state to up
+[2026-01-28 09:59:36.336] *Jan 28 00:35:16.563: %LINEPROTO-5-UPDOWN: Line protocol on Interface BRI0, changed state to down
+[2026-01-28 09:59:36.464] *Jan 28 00:35:16.563: %LINEPROTO-5-UPDOWN: Line protocol on Interface BRI0:1, changed state to down
+[2026-01-28 09:59:36.576] *Jan 28 00:35:16.563: %LINEPROTO-5-UPDOWN: Line protocol on Interface BRI0:2, changed state to down
+[2026-01-28 09:59:36.688] *Jan 28 00:35:16.563: %LINK-3-UPDOWN: Interface GigabitEthernet8, changed state to up
+[2026-01-28 09:59:36.784] *Jan 28 00:35:16.563: %LINK-3-UPDOWN: Interface FastEthernet0, changed state to up
+[2026-01-28 09:59:36.875] *Jan 28 00:35:16.911: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+[2026-01-28 09:59:36.993] *Jan 28 00:35:17.563: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet8, changed state to down
+[2026-01-28 09:59:37.109] *Jan 28 00:35:17.563: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0, changed state to up
+[2026-01-28 09:59:37.237] *Jan 28 00:35:19.331: %LINK-3-UPDOWN: Interface GigabitEthernet8, changed state to down
+[2026-01-28 09:59:37.344] *Jan 28 00:36:21.455: %LINK-5-CHANGED: Interface BRI0, changed state to administratively down
+[2026-01-28 09:59:37.456] *Jan 28 00:36:23.435: %LINK-5-CHANGED: Interface FastEthernet0, changed state to administratively down
+[2026-01-28 09:59:37.584] *Jan 28 00:36:23.435: %LINK-5-CHANGED: Interface GigabitEthernet8, changed state to administratively down
+[2026-01-28 09:59:37.698] *Jan 28 00:36:24.451: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0, changed state to down
+[2026-01-28 09:59:37.825] *Jan 28 00:36:24.775: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0, changed state to down
+[2026-01-28 09:59:37.952] *Jan 28 00:36:24.775: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1, changed state to down
+[2026-01-28 09:59:38.080] *Jan 28 00:36:24.775: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2, changed state to down
+[2026-01-28 09:59:38.209] *Jan 28 00:36:24.775: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet3, changed state to down
+[2026-01-28 09:59:38.336] *Jan 28 00:36:24.875: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet4, changed state to down
+[2026-01-28 09:59:38.464] *Jan 28 00:36:24.875: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet5, changed state to down
+[2026-01-28 09:59:38.592] *Jan 28 00:36:24.875: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet6, changed state to down
+[2026-01-28 09:59:38.720] *Jan 28 00:36:24.875: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet7, changed state to down
+[2026-01-28 09:59:38.846] *Jan 28 00:36:25.547: %SYS-5-RESTART: System restarted --
+[2026-01-28 09:59:38.912] Cisco IOS Software, C800 Software (C800-UNIVERSALK9-M), Version 15.4(1)T1, RELEASE SOFTWARE (fc2)
+[2026-01-28 09:59:39.025] Technical Support: http://www.cisco.com/techsupport
+[2026-01-28 09:59:39.087] Copyright (c) 1986-2014 by Cisco Systems, Inc.
+[2026-01-28 09:59:39.136] Compiled Wed 12-Feb-14 06:45 by prod_rel_team
+[2026-01-28 09:59:39.200] *Jan 28 00:36:25.843: %SNMP-5-COLDSTART: SNMP agent on host Router is undergoing a cold start
+[2026-01-28 09:59:39.296] *Jan 28 00:36:26.587: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+[2026-01-28 09:59:39.376] *Jan 28 00:36:26.587: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+[2026-01-28 10:00:07.595] Router>
+[2026-01-28 10:00:08.654] Router>
+[2026-01-28 10:00:08.784] Router>enable
+[2026-01-28 10:00:52.466] Router#terminal length 0
+[2026-01-28 10:01:28.308] Router#sh
+[2026-01-28 10:01:40.643] *Jan 28 00:38:34.167: %CDP_PD-4-POWER_OK:  - NON_CISCO-NO_CDP_RECEIVED inline power sourceow    
+[2026-01-28 10:01:45.325] Router#
+[2026-01-28 10:01:45.792] Router#show running-config
+[2026-01-28 10:02:24.778] Building configuration...
+[2026-01-28 10:02:24.997] 
+[2026-01-28 10:02:24.997] Current configuration : 1526 bytes
+[2026-01-28 10:02:25.029] !
+[2026-01-28 10:02:25.029] version 15.4
+[2026-01-28 10:02:25.045] service timestamps debug datetime msec
+[2026-01-28 10:02:25.093] service timestamps log datetime msec
+[2026-01-28 10:02:25.140] no service password-encryption
+[2026-01-28 10:02:25.172] !
+[2026-01-28 10:02:25.188] hostname Router
+[2026-01-28 10:02:25.204] !
+[2026-01-28 10:02:25.204] boot-start-marker
+[2026-01-28 10:02:25.221] boot-end-marker
+[2026-01-28 10:02:25.253] !
+[2026-01-28 10:02:25.253] !
+[2026-01-28 10:02:25.253] !
+[2026-01-28 10:02:25.253] no aaa new-model
+[2026-01-28 10:02:25.284] !
+[2026-01-28 10:02:25.284] !
+[2026-01-28 10:02:25.284] !
+[2026-01-28 10:02:25.284] !
+[2026-01-28 10:02:25.284] !
+[2026-01-28 10:02:25.300] !
+[2026-01-28 10:02:25.300] !
+[2026-01-28 10:02:25.300] !
+[2026-01-28 10:02:25.300] 
+[2026-01-28 10:02:25.300] 
+[2026-01-28 10:02:25.316] !
+[2026-01-28 10:02:25.316] !
+[2026-01-28 10:02:25.316] !
+[2026-01-28 10:02:25.316] !
+[2026-01-28 10:02:25.316] ip cef
+[2026-01-28 10:02:25.333] no ipv6 cef
+[2026-01-28 10:02:25.348] !
+[2026-01-28 10:02:25.348] !
+[2026-01-28 10:02:25.348] !
+[2026-01-28 10:02:25.364] !
+[2026-01-28 10:02:25.365] !
+[2026-01-28 10:02:25.365] multilink bundle-name authenticated
+[2026-01-28 10:02:25.412] !
+[2026-01-28 10:02:25.412] !
+[2026-01-28 10:02:25.412] !
+[2026-01-28 10:02:25.412] !
+[2026-01-28 10:02:25.412] !
+[2026-01-28 10:02:25.428] !
+[2026-01-28 10:02:25.428] !
+[2026-01-28 10:02:25.428] license udi pid C891FJ-K9 sn FGL183520E4
+[2026-01-28 10:02:25.476] !
+[2026-01-28 10:02:25.476] !
+[2026-01-28 10:02:25.492] !
+[2026-01-28 10:02:25.493] !
+[2026-01-28 10:02:25.493] !
+[2026-01-28 10:02:25.493] !
+[2026-01-28 10:02:25.493] !
+[2026-01-28 10:02:25.508] ! 
+[2026-01-28 10:02:25.508] !
+[2026-01-28 10:02:25.508] !
+[2026-01-28 10:02:25.508] !
+[2026-01-28 10:02:25.524] !
+[2026-01-28 10:02:25.524] !
+[2026-01-28 10:02:25.524] !
+[2026-01-28 10:02:25.524] !
+[2026-01-28 10:02:25.524] !
+[2026-01-28 10:02:25.541] !
+[2026-01-28 10:02:25.541] !
+[2026-01-28 10:02:25.541] interface BRI0
+[2026-01-28 10:02:25.556]  no ip address
+[2026-01-28 10:02:25.573]  encapsulation hdlc
+[2026-01-28 10:02:25.604]  shutdown
+[2026-01-28 10:02:25.620]  isdn termination multidrop
+[2026-01-28 10:02:25.652] !
+[2026-01-28 10:02:25.652] interface FastEthernet0
+[2026-01-28 10:02:25.684]  no ip address
+[2026-01-28 10:02:25.700]  shutdown
+[2026-01-28 10:02:25.715]  duplex auto
+[2026-01-28 10:02:25.733]  speed auto
+[2026-01-28 10:02:25.748] !
+[2026-01-28 10:02:25.748] interface GigabitEthernet0
+[2026-01-28 10:02:25.780]  no ip address
+[2026-01-28 10:02:25.797] !
+[2026-01-28 10:02:25.797] interface GigabitEthernet1
+[2026-01-28 10:02:25.828]  no ip address
+[2026-01-28 10:02:25.845] !
+[2026-01-28 10:02:25.861] interface GigabitEthernet2
+[2026-01-28 10:02:25.892]  no ip address
+[2026-01-28 10:02:25.908] !
+[2026-01-28 10:02:25.908] interface GigabitEthernet3
+[2026-01-28 10:02:25.940]  no ip address
+[2026-01-28 10:02:25.957] !
+[2026-01-28 10:02:25.957] interface GigabitEthernet4
+[2026-01-28 10:02:25.988]  no ip address
+[2026-01-28 10:02:26.004] !
+[2026-01-28 10:02:26.020] interface GigabitEthernet5
+[2026-01-28 10:02:26.052]  no ip address
+[2026-01-28 10:02:26.068] !
+[2026-01-28 10:02:26.068] interface GigabitEthernet6
+[2026-01-28 10:02:26.101]  no ip address
+[2026-01-28 10:02:26.116] !
+[2026-01-28 10:02:26.116] interface GigabitEthernet7
+[2026-01-28 10:02:26.148]  no ip address
+[2026-01-28 10:02:26.180] !
+[2026-01-28 10:02:26.180] interface GigabitEthernet8
+[2026-01-28 10:02:26.212]  no ip address
+[2026-01-28 10:02:26.229]  shutdown
+[2026-01-28 10:02:26.245]  duplex auto
+[2026-01-28 10:02:26.260]  speed auto
+[2026-01-28 10:02:26.276] !
+[2026-01-28 10:02:26.276] interface Vlan1
+[2026-01-28 10:02:26.293]  no ip address
+[2026-01-28 10:02:26.308] !
+[2026-01-28 10:02:26.308] interface Async3
+[2026-01-28 10:02:26.340]  no ip address
+[2026-01-28 10:02:26.356]  encapsulation slip
+[2026-01-28 10:02:26.372] !
+[2026-01-28 10:02:26.388] ip forward-protocol nd
+[2026-01-28 10:02:26.405] no ip http server
+[2026-01-28 10:02:26.436] no ip http secure-server
+[2026-01-28 10:02:26.468] !
+[2026-01-28 10:02:26.468] !
+[2026-01-28 10:02:26.468] !
+[2026-01-28 10:02:26.468] !
+[2026-01-28 10:02:26.468] !
+[2026-01-28 10:02:26.484] control-plane
+[2026-01-28 10:02:26.500] !
+[2026-01-28 10:02:26.500] !
+[2026-01-28 10:02:26.500] mgcp behavior rsip-range tgcp-only
+[2026-01-28 10:02:26.549] mgcp behavior comedia-role none
+[2026-01-28 10:02:26.580] mgcp behavior comedia-check-media-src disable
+[2026-01-28 10:02:26.629] mgcp behavior comedia-sdp-force disable
+[2026-01-28 10:02:26.677] !
+[2026-01-28 10:02:26.692] mgcp profile default
+[2026-01-28 10:02:26.708] !
+[2026-01-28 10:02:26.708] !
+[2026-01-28 10:02:26.724] !
+[2026-01-28 10:02:26.724] !
+[2026-01-28 10:02:26.724] !
+[2026-01-28 10:02:26.724] !
+[2026-01-28 10:02:26.724] !
+[2026-01-28 10:02:26.741] line con 0
+[2026-01-28 10:02:26.741]  no modem enable
+[2026-01-28 10:02:26.772] line aux 0
+[2026-01-28 10:02:26.788] line 3
+[2026-01-28 10:02:26.788]  modem InOut
+[2026-01-28 10:02:26.805]  speed 115200
+[2026-01-28 10:02:26.821]  flowcontrol hardware
+[2026-01-28 10:02:26.853] line vty 0 4
+[2026-01-28 10:02:26.868]  login
+[2026-01-28 10:02:26.874]  transport input none
+[2026-01-28 10:02:26.899] !
+[2026-01-28 10:02:26.899] scheduler allocate 20000 1000
+[2026-01-28 10:02:26.934] !
+[2026-01-28 10:02:26.934] end
+[2026-01-28 10:02:26.934] 
+[2026-01-28 10:02:26.934] Router#configure terminal
+[2026-01-28 10:02:50.261] Enter configuration commands, one per line.  End with CNTL/Z.
+[2026-01-28 10:02:50.341] Router(config)#hostname RT_B
+[2026-01-28 10:03:34.374] RT_B(config)#enable cisco     secret cisco
+[2026-01-28 10:04:30.600] RT_B(config)#no i@pp     p domain-lookup
+[2026-01-28 10:05:00.968] RT_B(config)#^V^H    service password  -encryption
+[2026-01-28 10:06:05.610] RT_B(config)#line con 0
+[2026-01-28 10:06:22.360] RT_B(config-line)#logging syn
+[2026-01-28 10:06:40.283] RT_B(config-line)#logging synchronous 
+[2026-01-28 10:06:43.323] RT_B(config-line)#line vty 0 4
+[2026-01-28 10:07:04.779] RT_B(config-line)#password cisco
+[2026-01-28 10:07:25.628] RT_B(config-line)#transport input all
+[2026-01-28 10:07:43.788] RT_B(config-line)#login
+[2026-01-28 10:07:55.225] RT_B(config-line)#exit
+[2026-01-28 10:08:37.321] RT_B(config)#intr te  erface fastethernet0
+[2026-01-28 10:09:19.162] RT_B(config-if)#ip address 192.168.0.31 255.255.255.240
+[2026-01-28 10:09:35.935] Bad mask /28 for address 192.168.0.31
+[2026-01-28 10:09:35.983] RT_B(config-if)#no shutdown
+[2026-01-28 10:09:56.368] RT_B(config-if)#
+[2026-01-28 10:09:59.792] *Jan 28 00:46:53.487: %LINK-3-UPDOWN: Interface FastEthernet0, changed state to up
+[2026-01-28 10:09:59.888] *Jan 28 00:46:54.487: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0, changed state to up
+[2026-01-28 10:10:00.016] RT_B(config-if)#
+[2026-01-28 10:10:03.782] *Jan 28 00:46:57.551: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0, changed state to down
+[2026-01-28 10:10:03.910] RT_B(config-if)#interface gigabitethernet9
+[2026-01-28 10:10:24.668]                                          ^
+[2026-01-28 10:10:24.713] % Invalid input detected at '^' marker.
+[2026-01-28 10:10:24.770] 
+[2026-01-28 10:10:24.770] RT_B(config)#interface gigabitethernet9 8
+[2026-01-28 10:10:48.865] RT_B(config-if)#ipaddress 172.168.    16.0.2 255.255.255.252
+[2026-01-28 10:11:16.066]                   ^
+[2026-01-28 10:11:16.098] % Invalid input detected at '^' marker.
+[2026-01-28 10:11:16.146] 
+[2026-01-28 10:11:16.146] RT_B(config-if)#ipaddress 172.16.0.2 255.255.255.252i paddress 172.16.0.2 255.255.255.252paddress 172.16.0.2 255.255.255.252 p address 172.16.0.2 255.255.255.252
+[2026-01-28 10:11:24.138] RT_B(config-if)#no shutdown
+[2026-01-28 10:11:40.832] RT_B(config-if)#
+[2026-01-28 10:11:43.843] *Jan 28 00:48:37.731: %LINK-3-UPDOWN: Interface GigabitEthernet8, changed state to down
+[2026-01-28 10:11:43.938] RT_B(config-if)#exit
+[2026-01-28 10:11:51.394] RT_B(config)#ip route 192.168.0.0 255.255.255.0 172.168.0.1
+[2026-01-28 10:12:42.016] RT_B(config)#copy running g-config startup-config
+[2026-01-28 10:13:23.016]                ^
+[2026-01-28 10:13:23.061] % Invalid input detected at '^' marker.
+[2026-01-28 10:13:23.095] 
+[2026-01-28 10:13:23.095] RT_B(config)#copy running-config startup-config
+[2026-01-28 10:13:38.870] RT_B(config)#copy running-config startup-config                                
+[2026-01-28 10:13:42.788] RT_B(config)#con p?
+[2026-01-28 10:13:48.871] % Unrecognized command
+[2026-01-28 10:13:48.903] RT_B(config)#cop   exit
+[2026-01-28 10:13:54.550] RT_B#
+[2026-01-28 10:13:55.865] *Jan 28 00:50:49.667: %SYS-5-CONFIG_I: Configured from console by console
+[2026-01-28 10:13:55.959] RT_B#copy
+[2026-01-28 10:14:00.085] RT_B#copy running-config startup-config
+[2026-01-28 10:14:20.871] Destination filename [startup-config]? 
+[2026-01-28 10:15:20.936] Building configuration...
+[2026-01-28 10:15:24.717] [OK]
+[2026-01-28 10:15:24.717] RT_B#show running connfigconnfig -connfig
+[2026-01-28 10:16:06.280]                      ^
+[2026-01-28 10:16:06.287] % Invalid input detected at '^' marker.
+[2026-01-28 10:16:06.333] 
+[2026-01-28 10:16:06.333] RT_B#show running-connfigfig 
+[2026-01-28 10:16:12.217] Building configuration...
+[2026-01-28 10:16:12.318] 
+[2026-01-28 10:16:12.318] Current configuration : 1763 bytes
+[2026-01-28 10:16:12.367] !
+[2026-01-28 10:16:12.367] ! Last configuration change at 00:50:49 UTC Wed Jan 28 2026
+[2026-01-28 10:16:12.430] !
+[2026-01-28 10:16:12.447] version 15.4
+[2026-01-28 10:16:12.466] service timestamps debug datetime msec
+[2026-01-28 10:16:12.512] service timestamps log datetime msec
+[2026-01-28 10:16:12.540] service password-encryption
+[2026-01-28 10:16:12.572] !
+[2026-01-28 10:16:12.590] hostname RT_B
+[2026-01-28 10:16:12.607] !
+[2026-01-28 10:16:12.607] boot-start-marker
+[2026-01-28 10:16:12.623] boot-end-marker
+[2026-01-28 10:16:12.639] !
+[2026-01-28 10:16:12.651] aqm-register-fnf
+[2026-01-28 10:16:12.671] !
+[2026-01-28 10:16:12.671] enable secret 5 $1$ZRad$hGFqj2aWjNzPlpqha9mXn/
+[2026-01-28 10:16:12.742] !
+[2026-01-28 10:16:12.742] no aaa new-model
+[2026-01-28 10:16:12.762] !
+[2026-01-28 10:16:12.762] !
+[2026-01-28 10:16:12.775] !
+[2026-01-28 10:16:12.775] !
+[2026-01-28 10:16:12.775] !
+[2026-01-28 10:16:12.775] !
+[2026-01-28 10:16:12.775] !
+[2026-01-28 10:16:12.792] !
+[2026-01-28 10:16:12.792] 
+[2026-01-28 10:16:12.792] 
+[2026-01-28 10:16:12.792] !
+[2026-01-28 10:16:12.792] !
+[2026-01-28 10:16:12.809] !
+[2026-01-28 10:16:12.809] !
+[2026-01-28 10:16:12.809] no ip domain lookup
+[2026-01-28 10:16:12.825] ip cef
+[2026-01-28 10:16:12.826] no ipv6 cef
+[2026-01-28 10:16:12.842] !
+[2026-01-28 10:16:12.842] !
+[2026-01-28 10:16:12.842] !
+[2026-01-28 10:16:12.874] !
+[2026-01-28 10:16:12.874] !
+[2026-01-28 10:16:12.874] multilink bundle-name authenticated
+[2026-01-28 10:16:12.921] !
+[2026-01-28 10:16:12.921] !
+[2026-01-28 10:16:12.921] !
+[2026-01-28 10:16:12.921] !
+[2026-01-28 10:16:12.937] !
+[2026-01-28 10:16:12.937] !
+[2026-01-28 10:16:12.937] !
+[2026-01-28 10:16:12.937] license udi pid C891FJ-K9 sn FGL183520E4
+[2026-01-28 10:16:12.986] !
+[2026-01-28 10:16:12.986] !
+[2026-01-28 10:16:13.002] !
+[2026-01-28 10:16:13.002] !
+[2026-01-28 10:16:13.002] !
+[2026-01-28 10:16:13.002] !
+[2026-01-28 10:16:13.017] !
+[2026-01-28 10:16:13.017] ! 
+[2026-01-28 10:16:13.017] !
+[2026-01-28 10:16:13.017] !
+[2026-01-28 10:16:13.017] !
+[2026-01-28 10:16:13.033] !
+[2026-01-28 10:16:13.033] !
+[2026-01-28 10:16:13.033] !
+[2026-01-28 10:16:13.033] !
+[2026-01-28 10:16:13.049] !
+[2026-01-28 10:16:13.049] !
+[2026-01-28 10:16:13.049] !
+[2026-01-28 10:16:13.049] interface BRI0
+[2026-01-28 10:16:13.065]  no ip address
+[2026-01-28 10:16:13.082]  encapsulation hdlc
+[2026-01-28 10:16:13.113]  shutdown
+[2026-01-28 10:16:13.129]  isdn termination multidrop
+[2026-01-28 10:16:13.161] !
+[2026-01-28 10:16:13.161] interface FastEthernet0
+[2026-01-28 10:16:13.193]  no ip address
+[2026-01-28 10:16:13.209]  duplex auto
+[2026-01-28 10:16:13.225]  speed auto
+[2026-01-28 10:16:13.241] !
+[2026-01-28 10:16:13.241] interface GigabitEthernet0
+[2026-01-28 10:16:13.274]  no ip address
+[2026-01-28 10:16:13.289] !
+[2026-01-28 10:16:13.289] interface GigabitEthernet1
+[2026-01-28 10:16:13.322]  no ip address
+[2026-01-28 10:16:13.353] !
+[2026-01-28 10:16:13.353] interface GigabitEthernet2
+[2026-01-28 10:16:13.385]  no ip address
+[2026-01-28 10:16:13.401] !
+[2026-01-28 10:16:13.401] interface GigabitEthernet3
+[2026-01-28 10:16:13.434]  no ip address
+[2026-01-28 10:16:13.449] !
+[2026-01-28 10:16:13.465] interface GigabitEthernet4
+[2026-01-28 10:16:13.497]  no ip address
+[2026-01-28 10:16:13.513] !
+[2026-01-28 10:16:13.513] interface GigabitEthernet5
+[2026-01-28 10:16:13.545]  no ip address
+[2026-01-28 10:16:13.561] !
+[2026-01-28 10:16:13.561] interface GigabitEthernet6
+[2026-01-28 10:16:13.593]  no ip address
+[2026-01-28 10:16:13.609] !
+[2026-01-28 10:16:13.625] interface GigabitEthernet7
+[2026-01-28 10:16:13.657]  no ip address
+[2026-01-28 10:16:13.673] !
+[2026-01-28 10:16:13.673] interface GigabitEthernet8
+[2026-01-28 10:16:13.705]  ip address 172.16.0.2 255.255.255.252
+[2026-01-28 10:16:13.753]  duplex auto
+[2026-01-28 10:16:13.769]  speed auto
+[2026-01-28 10:16:13.785] !
+[2026-01-28 10:16:13.785] interface Vlan1
+[2026-01-28 10:16:13.801]  no ip address
+[2026-01-28 10:16:13.817] !
+[2026-01-28 10:16:13.833] interface Async3
+[2026-01-28 10:16:13.849]  no ip address
+[2026-01-28 10:16:13.865]  encapsulation slip
+[2026-01-28 10:16:13.897] !
+[2026-01-28 10:16:13.897] ip forward-protocol nd
+[2026-01-28 10:16:13.928] no ip http server
+[2026-01-28 10:16:13.945] no ip http secure-server
+[2026-01-28 10:16:13.977] !
+[2026-01-28 10:16:13.977] !
+[2026-01-28 10:16:13.977] ip route 192.168.0.0 255.255.255.0 172.168.0.1
+[2026-01-28 10:16:14.041] !
+[2026-01-28 10:16:14.041] !
+[2026-01-28 10:16:14.041] !
+[2026-01-28 10:16:14.041] control-plane
+[2026-01-28 10:16:14.057] !
+[2026-01-28 10:16:14.073] !
+[2026-01-28 10:16:14.073] mgcp behavior rsip-range tgcp-only
+[2026-01-28 10:16:14.106] mgcp behavior comedia-role none
+[2026-01-28 10:16:14.153] mgcp behavior comedia-check-media-src disable
+[2026-01-28 10:16:14.202] mgcp behavior comedia-sdp-force disable
+[2026-01-28 10:16:14.250] !
+[2026-01-28 10:16:14.250] mgcp profile default
+[2026-01-28 10:16:14.281] !
+[2026-01-28 10:16:14.281] !
+[2026-01-28 10:16:14.281] !
+[2026-01-28 10:16:14.281] !
+[2026-01-28 10:16:14.297] !
+[2026-01-28 10:16:14.297] !
+[2026-01-28 10:16:14.297] !
+[2026-01-28 10:16:14.297] line con 0
+[2026-01-28 10:16:14.313]  logging synchronous
+[2026-01-28 10:16:14.345]  no modem enable
+[2026-01-28 10:16:14.362] line aux 0
+[2026-01-28 10:16:14.377] line 3
+[2026-01-28 10:16:14.377]  modem InOut
+[2026-01-28 10:16:14.393]  speed 115200
+[2026-01-28 10:16:14.425]  flowcontrol hardware
+[2026-01-28 10:16:14.442] line vty 0 4
+[2026-01-28 10:16:14.457]  password 7 0822455D0A16
+[2026-01-28 10:16:14.489]  login
+[2026-01-28 10:16:14.505]  transport input all
+[2026-01-28 10:16:14.521] !
+[2026-01-28 10:16:14.521] scheduler allocate 20000 1000
+[2026-01-28 10:16:14.569] !
+[2026-01-28 10:16:14.569] end
+[2026-01-28 10:16:14.569] 
+[2026-01-28 10:16:14.569] RT_B#
+[2026-01-28 10:23:11.138] *Jan 28 01:00:05.087: %LINK-3-UPDOWN: Interface FastEthernet0, changed state to up
+[2026-01-28 10:23:11.236] *Jan 28 01:00:06.087: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0, changed state to up
+[2026-01-28 10:23:11.334] RT_B#
+[2026-01-28 10:26:14.153] 
+[2026-01-28 10:26:14.153] 
+[2026-01-28 10:26:14.153] 
+[2026-01-28 10:26:14.153] 
+[2026-01-28 10:26:14.153] 
+[2026-01-28 10:26:14.168] 
+[2026-01-28 10:26:14.168] 
+[2026-01-28 10:26:14.168] 
+[2026-01-28 10:26:14.168] 
+[2026-01-28 10:26:14.168] 
+[2026-01-28 10:26:14.168] 
+[2026-01-28 10:26:14.168] 
+[2026-01-28 10:26:14.184] 
+[2026-01-28 10:26:14.184] 
+[2026-01-28 10:26:14.184] 
+[2026-01-28 10:26:14.184] 
+[2026-01-28 10:26:14.184] 
+[2026-01-28 10:26:14.184] 
+[2026-01-28 10:26:14.184] 
+[2026-01-28 10:26:14.200] 
+[2026-01-28 10:26:14.200] 
+[2026-01-28 10:26:14.200] 
+[2026-01-28 10:26:14.200] 
+[2026-01-28 10:26:14.200] 
+[2026-01-28 10:26:14.200] 
+[2026-01-28 10:26:14.200] 
+[2026-01-28 10:26:14.216] 
+[2026-01-28 10:26:14.216] 
+[2026-01-28 10:26:14.216] 
+[2026-01-28 10:26:14.216] 
+[2026-01-28 10:26:14.216] 
+[2026-01-28 10:26:14.216] 
+[2026-01-28 10:26:14.216] 
+[2026-01-28 10:26:14.232] 
+[2026-01-28 10:26:14.232] 
+[2026-01-28 10:26:14.232] 
+[2026-01-28 10:26:14.232] 
+[2026-01-28 10:26:14.232] 
+[2026-01-28 10:26:14.232] 
+[2026-01-28 10:26:14.232] 
+[2026-01-28 10:26:14.248] 
+[2026-01-28 10:26:14.248] 
+[2026-01-28 10:26:14.248] 
+[2026-01-28 10:26:14.248] 
+[2026-01-28 10:26:14.248] 
+[2026-01-28 10:26:14.248] 
+[2026-01-28 10:26:14.248] 
+[2026-01-28 10:26:14.264] 
+[2026-01-28 10:26:14.264] 
+[2026-01-28 10:26:14.264] 
+[2026-01-28 10:26:14.264] 
+[2026-01-28 10:26:14.264] 
+[2026-01-28 10:26:14.264] 
+[2026-01-28 10:26:14.264] 
+[2026-01-28 10:26:14.280] 
+[2026-01-28 10:26:14.280] 
+[2026-01-28 10:26:14.280] 
+[2026-01-28 10:26:14.280] 
+[2026-01-28 10:26:14.280] 
+[2026-01-28 10:26:14.280] 
+[2026-01-28 10:26:14.280] 
+[2026-01-28 10:26:14.296] RT_B con0 is now available
+[2026-01-28 10:26:14.329] 
+[2026-01-28 10:26:14.329] 
+[2026-01-28 10:26:14.329] 
+[2026-01-28 10:26:14.329] 
+[2026-01-28 10:26:14.329] 
+[2026-01-28 10:26:14.329] Press RETURN to get started.
+[2026-01-28 10:26:14.362] 
+[2026-01-28 10:26:14.377] 
+[2026-01-28 10:26:14.377] 
+[2026-01-28 10:26:14.377] 
+[2026-01-28 10:26:14.377] 
+[2026-01-28 10:26:14.377] 
+[2026-01-28 10:26:14.377] 
+[2026-01-28 10:26:14.392] 
+[2026-01-28 10:26:14.392] 
+[2026-01-28 10:26:14.392] 
+[2026-01-28 10:26:14.392] 

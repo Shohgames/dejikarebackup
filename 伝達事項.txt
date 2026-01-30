@@ -1,0 +1,36 @@
+実機操作演習日内容（共有フォルダ192.168.240.17)
+①、グループで VPN のHands-on「GRE」を実施
+	→・SW1台、ルータ2台、個人PC3台で実施
+	　・ルータにPCを1台ずつ接続
+	　・SWとルータ2台を接続
+	　・SWにPC1台を接続※PCはWireSharkを起動
+	　・SWに以下の設定を実施すること
+	　・RT_Aと接続しているポートに以下を設定
+　　　　　　conf t
+	　　monitor session 1 source interface Fa0/xx
+	　・PCと接続しているポートに以下を設定
+	　　conf t
+	　　monitor session 1 destination interface Fa0/xx
+②、グループで VPN のHands-on「IPsec」を実施
+	→①と同じ接続内容で実施する
+③、応用編※やりたいグループは実施
+	→・SW1台、ルータ2台、個人PC2台で実施
+	　・接続構成は①、②と一緒でSWにPCはつけない
+	　　SWはルータとして使用する、以下を設定する
+	　　Switch(config)# ip routing
+	　　Switch(config)# interface GigabitEthernet0/xx
+	　　Switch(config-if)# no switchport
+	　　※L3SWにルーティングプロトコルは不要
+　　　　　　　両側のルータと疎通できるようにするだけ
+
+
+終わった場合は以下から選択してください
+    ・テキストの復習（テキスト、パケトレ）※不明点があれば講師に聞いてください
+　　・小テスト（192.168.240.43）
+　　・就活関連
+　　・メンター面談
+    ・実機で遊ぶ（ルータ2台スイッチ4台サーバPC1台）
+・休憩は1時間に一度の声かけはします
+・メンター面談がある場合は面談を優先してください
+・手詰まりが発生した場合は講師を呼んでください
+・17:00から片付け
